@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white">
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/img1"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/documents"
+                android:id="@+id/img">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="Han"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="12 Dec 2021"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/date"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="00:12 AM"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="___________________________________"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/line"/>
+    </RelativeLayout>
+</RelativeLayout>
